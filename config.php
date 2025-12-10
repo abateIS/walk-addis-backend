@@ -1,10 +1,11 @@
 <?php
 // Database configuration
 // IMPORTANT: Update these values to match your MySQL setup
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'walk_addis');
-define('DB_USER', 'root'); // MySQL username
-define('DB_PASS', 'admin123'); // MySQL password
+define('DB_HOST', getenv('DB_HOST'));
+define('DB_NAME', getenv('DB_NAME'));
+define('DB_USER', getenv('DB_USER'));
+define('DB_PASS', getenv('DB_PASS'));
+
 
 // CORS headers for React frontend
 // Allow both localhost (development) and production domain
